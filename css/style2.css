@@ -337,7 +337,7 @@
     }
 
     .tag_music > .tag_btn > .tag{
-        width: 60%;
+        width: 70%;
         margin-left: 10%;
     }
 
@@ -359,7 +359,7 @@
     }
 
     .section1_m > .img_box{
-        width: 80%;
+        width: 90%;
         height: 500px;
         display: grid;
         grid-template-rows: repeat(2, 1fr);
