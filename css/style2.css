@@ -1,0 +1,569 @@
+@media screen and (max-width: 1200px) {
+    header > .menu > ul > li{
+        display: none;
+    }
+
+    header > .menu > ul > .bar{
+        display: block;
+        margin-bottom: 130px;
+        font-size: 20px;
+    }
+
+    header > .menu > .search{
+        display: none;
+    }
+
+    main > figure{
+        bottom: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+    }
+
+    main > h1{
+        font-size: 32px;
+    }
+
+    .tag_music{
+        margin-left: 0;
+        padding: 0 24px;
+    }
+
+    .tag_music > span{
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .tag_music > .tag_btn > .tag{
+        width: 70%;
+        gap: 0 20px;
+    }
+
+    .tag_music > .tag_btn > .tag > button{
+        width: 220px;
+    }
+
+    .tag_music > .albumSwiper .swiper-slide p{
+        font-size: 16px;
+    }
+
+    .up_music{
+        margin-left: 0;
+        padding: 0 24px;
+    }
+
+    .up_music > .text > h1{
+        font-size: 28px;
+    }
+
+    .up_music > .albumSwiper .swiper-slide p{
+        font-size: 16px;
+    }
+
+    .artist{
+        margin-left: 0;
+        padding: 0 24px;
+    }
+
+    .artist > h1{
+        font-size: 28px;
+    }
+
+    .artist > .artistSwiper .swiper-slide p{
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    .mag > .container > .row .title{
+        height: 367px;
+    }
+
+    .mag > .container > .row .title h1{
+        font-size: 28px;
+    }
+
+    .mag > .container > .row .title p{
+        font-size: 16px;
+    }
+
+    .mag > .container > .row .box p{
+        font-size: 16px;
+    }
+
+    /* best1 */
+
+    .genie > .text > span{
+        font-size: 28px;
+    }
+
+    .genie > .best > .box > h2{
+        font-size: 16px;
+    }
+
+    .genie > .best > .box > p{
+        font-size: 12px;
+    }
+
+    .genie > .best > .box2 > .top > .item1 > h2{
+        font-size: 16px;
+    }
+
+    .genie > .best > .box2 > .top > .item2 > p{
+        font-size: 16px;
+        color: #808080;
+    }
+
+    .genie > .best > .box2 > .top > .item3 > p{
+        font-size: 16px;
+    }
+
+    .genie > .best > .box2 > .mid > .item1 > h2{
+        font-size: 16px;
+    }
+
+    .genie > .best > .box2 > .mid > .item2 > p{
+        font-size: 16px;
+        color: #808080;
+    }
+
+    .genie > .best > .box2 > .mid > .item3 > p{
+        font-size: 16px;
+    }
+
+    .genie > .best > .box2 > .btm > .item1 > h2{
+        font-size: 16px;
+    }
+
+    .genie > .best > .box2 > .btm > .item2 > p{
+        font-size: 16px;
+        color: #808080;
+    }
+
+    .genie > .best > .box2 > .btm > .item3 > p{
+        font-size: 16px;
+    }
+
+    .genie > .best > .box2 > .top > .item2{
+        position: absolute;
+        left: 60%;
+    }
+
+    .genie > .best > .box2 > .top > .item3{
+        position: absolute;
+        left: 72%;
+    }
+
+    .genie > .best > .box2 > .mid > .item2{
+        position: absolute;
+        left: 60%;
+    }
+
+    .genie > .best > .box2 > .mid > .item3{
+        position: absolute;
+        left: 71%;
+    }
+
+    .genie > .best > .box2 > .btm > .item2{
+        position: absolute;
+        left: 60%;
+    }
+
+    .genie > .best > .box2 > .btm > .item3{
+        position: absolute;
+        left: 71%;
+    }
+
+    .genie > .best > .box2 > .top > .buy{
+        position: absolute;
+        left: 78%;
+    }
+
+    .genie > .best > .box2 > .mid > .buy{
+        position: absolute;
+        left: 78%;
+    }
+
+    .genie > .best > .box2 > .btm > .buy{
+        position: absolute;
+        left: 78%;
+    }
+
+    /* /best1 */
+
+    /* best2 */
+
+    .genie > .best2 > .box3 > h2{
+        font-size: 16px;
+    }
+
+    .genie > .best2 > .box3 > p{
+        font-size: 12px;
+    }
+
+    .genie > .best2 > .box4 > .top > .item1 > h2{
+        font-size: 16px;
+    }
+    
+    .genie > .best2 > .box4 > .top > .item2{
+        position: absolute;
+        left: 56%;
+        text-align: right;
+    }
+
+    .genie > .best2 > .box4 > .top > .item2 > span{
+        font-size: 16px;
+    }
+
+    .genie > .best2 > .box4 > .top > .item2 > span:first-child{
+        font-size: 16px;
+        color: #808080;
+    }
+
+    .genie > .best2 > .box4 > .top > .item2 > span:nth-child(3){
+        font-size: 16px;
+        color: #808080;
+    }
+
+    .genie > .best2 > .box4 > .mid > .item1 > h2{
+        font-size: 16px;
+    }
+
+    .genie > .best2 > .box4 > .mid > .item2 > span{
+        font-size: 16px;
+    }
+
+    .genie > .best2 > .box4 > .mid > .item2 > span:first-child{
+        font-size: 16px;
+        color: #808080;
+    }
+
+    .genie > .best2 > .box4 > .mid > .item2 > span:nth-child(3){
+        font-size: 16px;
+        color: #808080;
+    }
+
+    .genie > .best2 > .box4 > .mid > .item2{
+        position: absolute;
+        left: 52.5%;
+    }
+
+    .genie > .best2 > .box4 > .top > .buy{
+        position: absolute;
+        left: 78%;
+    }
+
+    .genie > .best2 > .box4 > .mid > .buy{
+        position: absolute;
+        left: 78%;
+    }
+
+    .genie > .best2 > .box4 > .btm > .buy{
+        position: absolute;
+        left: 78%;
+    }
+
+    /* /best2 */
+
+    /* best3 */
+
+    .genie > .best3 > .box5 > h2{
+        font-size: 16px;
+    }
+
+    .genie > .best3 > .box6 > .top > .item1 > h2{
+        font-size: 16px;
+    }
+
+    .genie > .best3 > .box6 > .top > .item3 > p{
+        font-size: 16px;
+    }
+
+    .genie > .best3 > .box6 > .mid > .item1 > h2{
+        font-size: 16px;
+    }
+
+    .genie > .best3 > .box6 > .mid > .item3 > p{
+        font-size: 16px;
+    }
+
+    .genie > .best3 > .box6 > .top > .item3{
+        position: absolute;
+        left: 71%;
+    }
+
+    .genie > .best3 > .box6 > .mid > .item3{
+        position: absolute;
+        left: 71%;
+    }
+
+    .genie > .best3 > .box6 > .top > .buy{
+        position: absolute;
+        left: 78%;
+    }
+
+    .genie > .best3 > .box6 > .mid > .buy{
+        position: absolute;
+        left: 78%;
+    }
+
+    .genie > .best3 > .box6 > .btm > .buy{
+        position: absolute;
+        left: 78%;
+    }
+    /* /best3 */
+}
+
+@media screen and (min-width: 1px) and (max-width: 575px) {
+    main > figure{
+        bottom: 35%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+    }
+
+    main > h1{
+        font-size: 20px;
+    }
+
+    .albumSwiper{
+        display: none;
+    }
+
+    .tag_music > span{
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .tag_music > span:first-child{
+        margin-left: 10%;
+    }
+
+    .tag_music > .tag_btn > .tag{
+        width: 60%;
+        margin-left: 10%;
+    }
+
+    .tag_music > .tag_btn > .tag > button{
+        font-size: 8px;
+        height: 20px;
+    }
+
+    .tag_music > .tag_btn > .tag > .size{
+        width: 200px;
+    }
+
+    .tag_music > .tag_btn > .tag > .m_none{
+        display: none;
+    }
+
+    .tag_music > .tag_btn > .more > button{
+        font-size: 12px;
+    }
+
+    .section1_m > .img_box{
+        width: 80%;
+        height: 500px;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        text-align: center;
+    }
+
+    .section1_m > .img_box p{
+        margin-right: 20px;
+        font-size: 12px;
+        margin-top: 16px;
+    }
+
+    .section1_m > .img_box p:last-child{
+        margin-top: 8px;
+        color: #808080;
+    }
+
+    .up_music > .text > h1{
+        font-size: 16px;
+        margin-left: 10%;
+        margin-bottom: 16px;
+    }
+
+    .up_music > .text > button{
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+
+    .artist > h1{
+        font-size: 16px;
+    }
+
+    .artist{
+        margin-left: 10%;
+    }
+
+    .artist > .artistSwiper .swiper-slide p{
+        margin-right: 20px;
+        font-size: 12px;
+    }
+
+    .m_none{
+        display: none;
+    }
+
+    .mag > .container > .m_h1{
+        font-size: 16px;
+        margin-left: 10%;
+    }
+
+    .mag > .container > .m_p{
+        font-size: 12px;
+        margin-left: 10%;
+    }
+
+    .mag > .container > .row > .col-6 > .box p{
+        font-size: 12px;
+    }
+
+    .mag > .container > .row > .col-6 > .box{
+        margin-left: 15%;
+    }
+
+    .mag > .container > h1,
+    .mag > .container > p,
+    .mag > .container > .row > .col-6{
+        display: block;
+    }
+
+    .genie > .text > span{
+        font-size: 16px;
+    }
+
+    .genie > .best > .box > h2{
+        font-size: 10px;
+    }
+
+    .genie > .best > .box > p{
+        font-size: 10px;
+    }
+
+    .genie > .best > .box2 > .top > .item1 > h2{
+        font-size: 12px;
+    }
+
+    .genie > .best > .box2 > .top > .item2 > p{
+        font-size: 12px;
+        color: #808080;
+    }
+
+    .genie > .best > .box2 > .top > .item3 > p{
+        font-size: 12px;
+    }
+
+    .genie > .best > .box2 > .mid > .item1 > h2{
+        font-size: 12px;
+    }
+
+    .genie > .best > .box2 > .mid > .item2 > p{
+        font-size: 12px;
+        color: #808080;
+    }
+
+    .genie > .best > .box2 > .mid > .item3 > p{
+        font-size: 12px;
+    }
+
+    .genie > .best > .box2 > .btm > .item1 > h2{
+        font-size: 12px;
+    }
+
+    .genie > .best > .box2 > .btm > .item2 > p{
+        font-size: 12px;
+        color: #808080;
+    }
+
+    .genie > .best > .box2 > .btm > .item3 > p{
+        font-size: 12px;
+    }
+
+    .genie > .best > .box2 > .top > .item2{
+        position: absolute;
+        left: 55%;
+    }
+
+    .genie > .best > .box2 > .top > .item3{
+        position: absolute;
+        left: 68%;
+    }
+
+    .genie > .best > .box2 > .mid > .item2{
+        position: absolute;
+        left: 55%;
+    }
+
+    .genie > .best > .box2 > .mid > .item3{
+        position: absolute;
+        left: 66%;
+    }
+
+    .genie > .best > .box2 > .btm > .item2{
+        position: absolute;
+        left: 55%;
+    }
+
+    .genie > .best > .box2 > .btm > .item3{
+        position: absolute;
+        left: 66%;
+    }
+
+    .genie > .best2 > .box3 > h2{
+        font-size: 10px;
+    }
+
+    .genie > .best2 > .box3 > p{
+        font-size: 8px;
+    }
+
+    .genie > .best2 > .box4 > .top > .item1 > h2{
+        font-size: 12px;
+    }
+
+    .genie > .best2 > .box4 > .top > .item2 > span{
+        font-size: 12px;
+    }
+
+    .genie > .best2 > .box4 > .top > .item2 > span:first-child{
+        font-size: 12px;
+        color: #808080;
+    }
+
+    .genie > .best2 > .box4 > .top > .item2 > span:nth-child(3){
+        font-size: 12px;
+        color: #808080;
+    }
+
+    .genie > .best2 > .box4 > .mid > .item1 > h2{
+        font-size: 12px;
+    }
+
+    .genie > .best2 > .box4 > .mid > .item2 > span{
+        font-size: 12px;
+    }
+
+    .genie > .best2 > .box4 > .mid > .item2 > span:first-child{
+        font-size: 12px;
+        color: #808080;
+    }
+
+    .genie > .best2 > .box4 > .mid > .item2 > span:nth-child(3){
+        font-size: 12px;
+        color: #808080;
+    }
+
+    .genie > .best2 > .box4 > .top > .item2{
+        position: absolute;
+        left: 40%;
+        text-align: right;
+    }
+
+    .genie > .best2 > .box4 > .mid > .item2{
+        position: absolute;
+        left: 41%;
+    }
+}
