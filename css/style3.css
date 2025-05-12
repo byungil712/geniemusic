@@ -1,0 +1,83 @@
+body{
+  background-color: #000;
+}
+
+.dropdown{
+    position : relative;
+    display : inline-block;
+  }
+  
+.dropbtn_icon{
+    font-family : 'Material Icons';
+}
+
+.dropbtn{
+    color : #fff;
+    font-size : 16px;
+}
+  
+.dropdown-content{
+    display : none;
+    position : absolute;
+    z-index : 1; /*다른 요소들보다 앞에 배치*/
+    font-weight: 400;
+    background-color: #000;
+}
+  
+.dropdown-content a:hover{
+    color : #ececec
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.t_hidden{
+    display: none;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+}
+
+header > .menu{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > .menu > ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 10px;
+    gap: 100px;
+    z-index: 2;
+}
+
+header > .menu > ul > .bar{
+    display: none;
+}
+
+header > .menu > .search{
+    width: 200px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    margin-right: 20px;
+    text-align: right;
+    cursor: pointer;
+}
+
+  header > .menu > .search i{
+    color: #fff;
+    padding-right: 10px;
+  }
+
+header > .menu > ul .sub{
+    color: #808080;
+}
+
