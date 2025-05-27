@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지니뮤직</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <script src="./script/swiper-bundle.min.js"></script>
+    <script src="./script/app.js"></script>
+    <script src="./script/jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/f17123d448.js" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $("header > .menu > ul > .bar > i").click(function(){
+                $(".m_menu").slideToggle();
+            });
+
+            $(".tag_music > .tag_btn > .tag > button:first-of-type").click(function(){            
+                $(".tag_music > .tag_btn > .tag > button:first-of-type").css("backgroundColor", "#0096dd"),
+                $(".tag_music > .tag_btn > .tag > button:first-of-type").css("color", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(2)").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(2)").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(3)").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(3)").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(4)").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(4)").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:last-of-type").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:last-of-type").css("color", "#000"),
+                $(".tag_music > .tag1").css("display", "block"),
+                $(".tag_music > .tag2").css("display", "none"),
+                $(".tag_music > .tag3").css("display", "none"),
+                $(".tag_music > .tag4").css("display", "none"),
+                $(".tag_music > .tag5").css("display", "none")
+            });
+
+            $(".tag_music > .tag_btn > .tag > button:nth-of-type(2)").click(function(){            
+                $(".tag_music > .tag_btn > .tag > button:first-of-type").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:first-of-type").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(2)").css("backgroundColor", "#0096dd"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(2)").css("color", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(3)").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(3)").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(4)").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(4)").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:last-of-type").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:last-of-type").css("color", "#000"),
+                $(".tag_music > .tag1").css("display", "none"),
+                $(".tag_music > .tag2").css("display", "block"),
+                $(".tag_music > .tag3").css("display", "none"),
+                $(".tag_music > .tag4").css("display", "none"),
+                $(".tag_music > .tag5").css("display", "none")
+            });
+
+            $(".tag_music > .tag_btn > .tag > button:nth-of-type(3)").click(function () {
+                $(".tag_music > .tag_btn > .tag > button:first-of-type").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:first-of-type").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(2)").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(2)").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(3)").css("backgroundColor", "#0096dd"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(3)").css("color", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(4)").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(4)").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:last-of-type").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:last-of-type").css("color", "#000"),
+                $(".tag_music > .tag1").css("display", "none"),
+                $(".tag_music > .tag2").css("display", "none"),
+                $(".tag_music > .tag3").css("display", "block"),
+                $(".tag_music > .tag4").css("display", "none"),
+                $(".tag_music > .tag5").css("display", "none")
+            });
+
+            $(".tag_music > .tag_btn > .tag > button:nth-of-type(4)").click(function () {
+                $(".tag_music > .tag_btn > .tag > button:first-of-type").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:first-of-type").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(2)").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(2)").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(3)").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(3)").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(4)").css("backgroundColor", "#0096dd"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(4)").css("color", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:last-of-type").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:last-of-type").css("color", "#000"),
+                $(".tag_music > .tag1").css("display", "none"),
+                $(".tag_music > .tag2").css("display", "none"),
+                $(".tag_music > .tag3").css("display", "none"),
+                $(".tag_music > .tag4").css("display", "block"),
+                $(".tag_music > .tag5").css("display", "none")
+            });
+
+            $(".tag_music > .tag_btn > .tag > button:last-of-type").click(function () {
+                $(".tag_music > .tag_btn > .tag > button:first-of-type").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:first-of-type").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(2)").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(2)").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(3)").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(3)").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(4)").css("backgroundColor", "#fff"),
+                $(".tag_music > .tag_btn > .tag > button:nth-of-type(4)").css("color", "#000"),
+                $(".tag_music > .tag_btn > .tag > button:last-of-type").css("backgroundColor", "#0096dd"),
+                $(".tag_music > .tag_btn > .tag > button:last-of-type").css("color", "#fff"),
+                $(".tag_music > .tag1").css("display", "none"),
+                $(".tag_music > .tag2").css("display", "none"),
+                $(".tag_music > .tag3").css("display", "none"),
+                $(".tag_music > .tag4").css("display", "none"),
+                $(".tag_music > .tag5").css("display", "block")
+            });
+
+
+
+            $(".tag_music > .section1_m > .tag_btn_m > .tag > button:first-of-type").click(function(){            
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:first-of-type").css("backgroundColor", "#0096dd"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:first-of-type").css("color", "#fff"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(2)").css("backgroundColor", "#fff"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(2)").css("color", "#000"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(3)").css("backgroundColor", "#fff"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(3)").css("color", "#000"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(4)").css("backgroundColor", "#fff"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(4)").css("color", "#000"),
+                $(".tag_music > .section1_m > .tag1_m").css("display", "grid"),
+                $(".tag_music > .section1_m > .tag2_m").css("display", "none"),
+                $(".tag_music > .section1_m > .tag3_m").css("display", "none"),
+                $(".tag_music > .section1_m > .tag4_m").css("display", "none")
+            });
+
+            $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(2)").click(function(){            
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:first-of-type").css("backgroundColor", "#fff"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:first-of-type").css("color", "#000"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(2)").css("backgroundColor", "#0096dd"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(2)").css("color", "#fff"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(3)").css("backgroundColor", "#fff"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(3)").css("color", "#000"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(4)").css("backgroundColor", "#fff"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(4)").css("color", "#000"),
+                $(".tag_music > .section1_m > .tag1_m").css("display", "none"),
+                $(".tag_music > .section1_m > .tag2_m").css("display", "grid"),
+                $(".tag_music > .section1_m > .tag3_m").css("display", "none"),
+                $(".tag_music > .section1_m > .tag4_m").css("display", "none")
+            });
+
+            $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(3)").click(function () {
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:first-of-type").css("backgroundColor", "#fff"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:first-of-type").css("color", "#000"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(2)").css("backgroundColor", "#fff"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(2)").css("color", "#000"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(3)").css("backgroundColor", "#0096dd"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(3)").css("color", "#fff"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(4)").css("backgroundColor", "#fff"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(4)").css("color", "#000"),
+                $(".tag_music > .section1_m > .tag1_m").css("display", "none"),
+                $(".tag_music > .section1_m > .tag2_m").css("display", "none"),
+                $(".tag_music > .section1_m > .tag3_m").css("display", "grid"),
+                $(".tag_music > .section1_m > .tag4_m").css("display", "none")
+            });
+
+            $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(4)").click(function () {
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:first-of-type").css("backgroundColor", "#fff"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:first-of-type").css("color", "#000"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(2)").css("backgroundColor", "#fff"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(2)").css("color", "#000"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(3)").css("backgroundColor", "#fff"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(3)").css("color", "#000"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(4)").css("backgroundColor", "#0096dd"),
+                $(".tag_music > .section1_m > .tag_btn_m > .tag > button:nth-of-type(4)").css("color", "#fff"),
+                $(".tag_music > .section1_m > .tag1_m").css("display", "none"),
+                $(".tag_music > .section1_m > .tag2_m").css("display", "none"),
+                $(".tag_music > .section1_m > .tag3_m").css("display", "none"),
+                $(".tag_music > .section1_m > .tag4_m").css("display", "grid")
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="dropdown">
+        <div class="menu">
+            <h1>
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/logo_header.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/logo_header_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/logo_header_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <span class="t_hidden">지니뮤직</span>
+                </a>
+            </h1>
+            <ul>
+                <li class="dropbtn">
+                    <a href="#">지니차트</a>
+                    <ul class="sub dropdown-content">
+                        <li><a href="#">TOP 100</a></li>
+                        <li><a href="#">뮤직비디오 차트</a></li>
+                    </ul>
+                </li>
+                <li class="dropbtn">
+                    <a href="#">최신음악</a>
+                    <ul class="sub dropdown-content">
+                        <li><a href="#">최신 곡</a></li>
+                        <li><a href="#">최신 앨범</a></li>
+                    </ul>
+                </li>
+                <li class="dropbtn">
+                    <a href="#">영상</a>
+                    <ul class="sub dropdown-content">
+                        <li><a href="#">홈</a></li>
+                        <li><a href="#">뮤직비디오</a></li>
+                        <li><a href="#">뮤지션</a></li>
+                    </ul>
+                </li>
+                <li class="dropbtn">
+                    <a href="#">장르</a>
+                    <ul class="sub dropdown-content">
+                        <li><a href="#">가요</a></li>
+                        <li><a href="#">트로트</a></li>
+                        <li><a href="#">OST</a></li>
+                        <li><a href="#">EDM</a></li>
+                        <li><a href="#">JPOP</a></li>
+                    </ul>
+                </li>
+                <li class="bar">
+                    <i class="fa-solid fa-bars"></i>
+                </li>
+            </ul>
+            <div class="search">
+                <input type="text">
+            </div>
+        </div>
+    </header>
+
+    <div class="m_menu dropdown_m">
+        <ul>
+            <li class="dropbtn_m">
+                <a href="#">지니차트</a>
+                <ul class="sub dropdown-content_m">
+                    <li><a href="#">TOP 100</a></li>
+                    <li><a href="#">뮤직비디오 차트</a></li>
+                </ul>
+            </li>
+            <li class="dropbtn_m">
+                <a href="#">최신음악</a>
+                <ul class="sub dropdown-content_m">
+                    <li><a href="#">최신 곡</a></li>
+                    <li><a href="#">최신 앨범</a></li>
+                </ul>
+            </li>
+            <li class="dropbtn_m">
+                <a href="#">영상</a>
+                <ul class="sub dropdown-content_m">
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">뮤직비디오</a></li>
+                    <li><a href="#">뮤지션</a></li>
+                </ul>
+            </li>
+            <li class="dropbtn_m">
+                <a href="#">장르</a>
+                <ul class="sub dropdown-content_m">
+                    <li><a href="#">가요</a></li>
+                    <li><a href="#">트로트</a></li>
+                    <li><a href="#">OST</a></li>
+                    <li><a href="#">EDM</a></li>
+                    <li><a href="#">JPOP</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <main class="bg_video">
+        <figure>
+            <picture>
+                <source srcset="./img/main/logo.png" media="(min-width:1200px)">
+                <source srcset="./img/main_t/logo_t.png" media="(min-width:767px)">
+                <source srcset="./img/main_m/logo_m.png" media="(min-width:1px)">
+                <img src="./" alt="#">
+            </picture>
+            <picture>
+                <source srcset="./img/main/main_img.jpg" media="(min-width:1200px)">
+                <source srcset="./img/main_t/main_img_t.jpg" media="(min-width:767px)">
+                <source srcset="./img/main_m/main_img_m.jpg" media="(min-width:1px)">
+                <img src="./" alt="#">
+            </picture>
+        </figure>
+        <h1>
+            새로운 즐거움의 시작 <br>
+            케이티 지니뮤직
+        </h1>
+    </main>
+
+    <section class="tag_music">
+        <span>태그로 찾는</span>
+        <span class="main_color">나만의 음악</span>
+        <div class="tag_btn">
+            <div class="tag">
+                <button type="button">
+                    휴식
+                </button>
+                <button type="button">
+                    드라이브
+                </button>
+                <button type="button">
+                    휴가/여행
+                </button>
+                <button type="button">
+                    운동
+                </button>
+                <button type="button" class="m_none">
+                    출/퇴근길
+                </button>
+            </div>
+            <div class="more">
+                <button type="button">
+                    더보기
+                </button>
+            </div>
+        </div>
+        <div class="swiper albumSwiper tag1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1_img1.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1_img1_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1_img1_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>서울 이곳은</p>
+                    <p>로이킴</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1_img2.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1_img2_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1_img2_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>너의 우주</p>
+                    <p>권진아</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1_img3.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1_img3_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1_img3_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>낙하</p>
+                    <p>나상현씨밴드</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1_img4.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1_img4_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1_img4_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>등대</p>
+                    <p>하현상</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1_img5.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1_img5_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1_img5_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>한계</p>
+                    <p>넬(NELL)</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1_img6.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1_img6_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1_img6_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>돈 Call me</p>
+                    <p>염따</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1_img7.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1_img7_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1_img7_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>구르미 그린 달빛</p>
+                    <p>거미</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1_img8.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1_img8_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1_img8_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>휴게소</p>
+                    <p>카더가든</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1_img9.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1_img9_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1_img9_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>숲</p>
+                    <p>최유리</p>
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <div class="swiper albumSwiper tag2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-2_img1.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-2_img1_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-2_img1_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>목소리</p>
+                    <p>소란</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-2_img2.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-2_img2_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-2_img2_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>먼지</p>
+                    <p>세븐틴</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-2_img3.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-2_img3_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-2_img3_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>멸종</p>
+                    <p>쏜애플</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-2_img4.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-2_img4_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-2_img4_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>항해</p>
+                    <p>유다빈밴드</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-2_img5.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-2_img5_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-2_img5_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>야경</p>
+                    <p>터치드</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-2_img6.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-2_img6_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-2_img6_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>NO PAIN</p>
+                    <p>실리카겔</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-2_img7.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-2_img7_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-2_img7_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>너의 이름, 청춘</p>
+                    <p>모브닝</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-2_img8.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-2_img8_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-2_img8_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>여름도둑</p>
+                    <p>달담</p>
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <div class="swiper albumSwiper tag3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-3_img1.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-3_img1_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-3_img1_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>BLUE SPRING</p>
+                    <p>YUTO ADACHI</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-3_img2.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-3_img2_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-3_img2_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>예뻤어</p>
+                    <p>Day6</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-3_img3.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-3_img3_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-3_img3_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>Painkiller</p>
+                    <p>Ruel</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-3_img4.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-3_img4_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-3_img4_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>잠깨</p>
+                    <p>LUCY</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-3_img5.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-3_img5_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-3_img5_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>POP!</p>
+                    <p>나연(TWICE)</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-3_img6.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-3_img6_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-3_img6_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>HUG</p>
+                    <p>RIZE</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-3_img7.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-3_img7_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-3_img7_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>별별별</p>
+                    <p>NMIXX</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-3_img8.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-3_img8_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-3_img8_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>청바지</p>
+                    <p>부석순</p>
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <div class="swiper albumSwiper tag4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-4_img1.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-4_img1_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-4_img1_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>Air</p>
+                    <p>예지(ITZY)</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-4_img2.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-4_img2_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-4_img2_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>동갑내기</p>
+                    <p>호시X우지</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-4_img3.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-4_img3_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-4_img3_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>IMOK</p>
+                    <p>빈첸</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-4_img4.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-4_img4_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-4_img4_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>MEOW</p>
+                    <p>MEOVV</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-4_img5.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-4_img5_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-4_img5_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>좋지 아니한가</p>
+                    <p>유다빈밴드</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-4_img6.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-4_img6_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-4_img6_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>Hyperstar</p>
+                    <p>창모</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-4_img7.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-4_img7_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-4_img7_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>Shoot me</p>
+                    <p>Day6</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-4_img8.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-4_img8_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-4_img8_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>뉴질랜드</p>
+                    <p>래원</p>
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <div class="swiper albumSwiper tag5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-5_img1.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-5_img1_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-5_img1_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>내 삶의 반</p>
+                    <p>임재현</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-5_img2.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-5_img2_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-5_img2_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>1999</p>
+                    <p>마크</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-5_img3.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-5_img3_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-5_img3_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>Goodbye My Baby</p>
+                    <p>Jace June</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-5_img4.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-5_img4_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-5_img4_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>I Love You So</p>
+                    <p>The Walters</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-5_img5.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-5_img5_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-5_img5_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>빙고</p>
+                    <p>거북이</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-5_img6.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-5_img6_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-5_img6_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>
+                        Really Like You <br>
+                        (Spring Version)
+                    </p>
+                    <p>규빈</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-5_img7.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-5_img7_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-5_img7_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>
+                        Intentions <br>
+                        (Feat. Quavo)
+                    </p>
+                    <p>Justin Bieber</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section1-5_img8.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section1-5_img8_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section1-5_img8_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>버릇처럼 셋을 센다</p>
+                    <p>KCM</p>
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <section class="section1_m">
+            <div class="tag_btn_m">
+                <div class="tag">
+                    <button type="button">
+                        휴식
+                    </button>
+                    <button type="button">
+                        드라이브
+                    </button>
+                    <button type="button">
+                        휴가/여행
+                    </button>
+                    <button type="button">
+                        운동
+                    </button>
+                    <button type="button" class="m_none">
+                        출/퇴근길
+                    </button>
+                </div>
+                <div class="more">
+                    <button type="button">
+                        더보기
+                    </button>
+                </div>
+            </div>
+
+            <div class="img_box tag1_m">
+                <a href="#">
+                    <img src="./img/main_m/section1_img1_m.png" alt="/">
+                    <p>서울 이곳은</p>
+                    <p>로이킴</p>
+                </a>
+                <a href="#">
+                    <img src="./img/main_m/section1_img2_m.png" alt="/">
+                    <p>너의 우주</p>
+                    <p>권진아</p>
+                </a>
+                <a href="#">
+                    <img src="./img/main_m/section1_img3_m.png" alt="/">
+                    <p>낙하</p>
+                    <p>나상현씨밴드</p>
+                </a>
+                <a href="#">
+                    <img src="./img/main_m/section1_img4_m.png" alt="/">
+                    <p>등대</p>
+                    <p>하현상</p>
+                </a>
+            </div>
+
+            <div class="img_box tag2_m">
+                <a href="#">
+                    <img src="./img/main_m/section1-2_img1_m.png" alt="/">
+                    <p>목소리</p>
+                    <p>소란</p>
+                </a>
+                <a href="#">
+                    <img src="./img/main_m/section1-2_img2_m.png" alt="/">
+                    <p>먼지</p>
+                    <p>세븐틴</p>
+                </a>
+                <a href="#">
+                    <img src="./img/main_m/section1-2_img3_m.png" alt="/">
+                    <p>멸종</p>
+                    <p>쏜애플</p>
+                </a>
+                <a href="#">
+                    <img src="./img/main_m/section1-2_img4_m.png" alt="/">
+                    <p>항해</p>
+                    <p>유다빈밴드</p>
+                </a>
+            </div>
+
+            <div class="img_box tag3_m">
+                <a href="#">
+                    <img src="./img/main_m/section1-3_img1_m.png" alt="/">
+                    <p>BLUE SPRING</p>
+                    <p>YUTO ADACHI</p>
+                </a>
+                <a href="#">
+                    <img src="./img/main_m/section1-3_img2_m.png" alt="/">
+                    <p>예뻤어</p>
+                    <p>Day6</p>
+                </a>
+                <a href="#">
+                    <img src="./img/main_m/section1-3_img3_m.png" alt="/">
+                    <p>Painkiller</p>
+                    <p>Ruel</p>
+                </a>
+                <a href="#">
+                    <img src="./img/main_m/section1-3_img4_m.png" alt="/">
+                    <p>잠깨</p>
+                    <p>LUCY</p>
+                </a>
+            </div>
+
+            <div class="img_box tag4_m">
+                <a href="#">
+                    <img src="./img/main_m/section1-4_img1_m.png" alt="/">
+                    <p>Air</p>
+                    <p>예지(ITZY)</p>
+                </a>
+                <a href="#">
+                    <img src="./img/main_m/section1-4_img2_m.png" alt="/">
+                    <p>동갑내기</p>
+                    <p>호시X우지</p>
+                </a>
+                <a href="#">
+                    <img src="./img/main_m/section1-4_img3_m.png" alt="/">
+                    <p>IMOK</p>
+                    <p>빈첸</p>
+                </a>
+                <a href="#">
+                    <img src="./img/main_m/section1-4_img4_m.png" alt="/">
+                    <p>MEOW</p>
+                    <p>MEOVV</p>
+                </a>
+            </div>
+        </section>
+    </section>
+
+    
+
+    <section class="up_music">
+        <div class="text">
+            <h1>인기 상승 곡</h1>
+            <button type="button">더보기</button>
+        </div>
+        <div class="swiper albumSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section2_img1.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section2_img1_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section2_img1_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>Only cry in the rain</p>
+                    <p>츄</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section2_img2.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section2_img2_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section2_img2_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>낮, 술</p>
+                    <p>딘딘</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section2_img3.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section2_img3_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section2_img3_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>기다려줘</p>
+                    <p>Wen</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section2_img4.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section2_img4_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section2_img4_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>Wait On Me</p>
+                    <p>Kai</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section2_img5.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section2_img5_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section2_img5_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>이제는 어떻게 사랑을 하나요</p>
+                    <p>이아영</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section2_img6.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section2_img6_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section2_img6_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>아름다운 꿈</p>
+                    <p>잔나비</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section2_img7.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section2_img7_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section2_img7_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>너에게 닿기를</p>
+                    <p>10cm</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section2_img8.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section2_img8_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section2_img8_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>OLD PHONE</p>
+                    <p>Ed sheeran</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section2_img9.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section2_img9_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section2_img9_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>내가 많이 사랑해요</p>
+                    <p>이승철</p>
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <section class="section1_m">
+            <div class="img_box">
+                <a href="#">
+                    <img src="./img/main_m/section2_img1_m.png" alt="/">
+                    <p>Only cry in the rain</p>
+                    <p>츄</p>
+                </a>
+                <a href="#">
+                    <img src="./img/main_m/section2_img2_m.png" alt="/">
+                    <p>낮, 술</p>
+                    <p>딘딘</p>
+                </a>
+                <a href="#">
+                    <img src="./img/main_m/section2_img3_m.png" alt="/">
+                    <p>기다려줘</p>
+                    <p>Wen</p>
+                </a>
+                <a href="#">
+                    <img src="./img/main_m/section2_img4_m.png" alt="/">
+                    <p>Wait On Me</p>
+                    <p>Kai</p>
+                </a>
+            </div>
+        </section>
+    </section>
+
+    <section class="artist">
+        <h1>인기 아티스트</h1>
+        <div class="swiper artistSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section3_img1.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section3_img1_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section3_img1_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>G-DRAGON</p>
+                    <p>아티스트</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section3_img2.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section3_img2_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section3_img2_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>볼빨간사춘기</p>
+                    <p>아티스트</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section3_img3.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section3_img3_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section3_img3_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>DAY6</p>
+                    <p>아티스트</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section3_img4.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section3_img4_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section3_img4_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>아이유</p>
+                    <p>아티스트</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section3_img5.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section3_img5_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section3_img5_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>10cm</p>
+                    <p>아티스트</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section3_img6.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section3_img6_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section3_img6_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>NewJeans</p>
+                    <p>아티스트</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section3_img7.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section3_img7_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section3_img7_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>ILLIT</p>
+                    <p>아티스트</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section3_img8.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section3_img8_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section3_img8_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>ROSÉ</p>
+                    <p>아티스트</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section3_img9.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section3_img9_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section3_img9_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>방탄소년단</p>
+                    <p>아티스트</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/main/section3_img10.png" media="(min-width:1200px)">
+                        <source srcset="./img/main_t/section3_img10_t.png" media="(min-width:767px)">
+                        <source srcset="./img/main_m/section3_img10_m.png" media="(min-width:1px)">
+                        <img src="./" alt="#">
+                    </picture>
+                    <p>Kendrick Lamar</p>
+                    <p>아티스트</p>
+                </a>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mag">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 m_none">
+                    <div class="box title">
+                        <h1>매거진</h1>
+                        <p>
+                            매일 업데이트 되는 기사와 칼럼을  <br>
+                            한 눈에 모아보세요.
+                        </p>
+                        <p class="more">
+                            더보기
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4 m_none">
+                    <div class="box">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./img/main/section4_img1.png" media="(min-width:1200px)">
+                                <source srcset="./img/main_t/section4_img1_t.png" media="(min-width:767px)">
+                                <source srcset="./img/main_m/section4_img1_m.png" media="(min-width:1px)">
+                                <img src="./" alt="#">
+                            </picture>
+                            <p>
+                                Interview with <br>
+                                (𝑥)IUMIN
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 m_none">
+                    <div class="box"></div>
+                </div>
+                <div class="col-4 m_none">
+                    <div class="box"></div>
+                </div>
+                <div class="col-4 m_none">
+                    <div class="box">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./img/main/section4_img2.png" media="(min-width:1200px)">
+                                <source srcset="./img/main_t/section4_img2_t.png" media="(min-width:767px)">
+                                <source srcset="./img/main_m/section4_img2_m.png" media="(min-width:1px)">
+                                <img src="./" alt="#">
+                            </picture>
+                            <p>
+                                츄, <br>
+                                흘러간 감정과 머무른 기억들
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 m_none">
+                    <div class="box">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./img/main/section4_img3.png" media="(min-width:1200px)">
+                                <source srcset="./img/main_t/section4_img3_t.png" media="(min-width:767px)">
+                                <source srcset="./img/main_m/section4_img3_m.png" media="(min-width:1px)">
+                                <img src="./" alt="#">
+                            </picture>
+                            <p>
+                                이주의 디깅 #204: <br>
+                                플레이보이 카티
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="m_h1">매거진</h1>
+            <p class="m_p">
+                매일 업데이트 되는 기사와 칼럼을
+                한 눈에 모아보세요.
+            </p>
+            <div class="row">
+                <div class="col-6 m_block">
+                    <div class="box">
+                        <a href="#">
+                            <img src="./img/main_m/section4_img1_m.png" alt="/">
+                            <p>
+                                Interview with <br>
+                                (𝑥)IUMIN
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 m_block">
+                    <div class="box">
+                        <a href="#">
+                            <img src="./img/main_m/section4_img2_m.png" alt="/">
+                            <p>
+                                츄, <br>
+                                흘러간 감정과 머무른 기억들
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 m_block">
+                    <div class="box">
+                        <a href="#">
+                            <img src="./img/main_m/section4_img3_m.png" alt="/">
+                            <p>
+                                이주의 디깅 #204: <br>
+                                플레이보이 카티
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 m_block">
+                    <div class="box">
+                        <a href="#">
+                            <img src="./img/main_m/section4_img4_m.png" alt="/">
+                            <p>
+                                pH-1의 <br>
+                                세계관이 넓어질 때
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="genie">
+        <div class="text">
+            <span class="main_color">BEST</span>
+            <span>지니 이용권</span>
+        </div>
+        <div class="best">
+
+            <div class="box">
+                <h2>스마트 음악감상</h2>
+                <p>모바일 전용</p>
+            </div>
+
+            <div class="box2">
+                <div class="top">
+                <div class="item1">
+                    <h2>첫 달 100원</h2>
+                </div>
+                <div class="item2">
+                    <p>7,400원</p>
+                </div>
+                <div class="item3">
+                    <p>100원</p>
+                </div>
+                <div class="buy">
+                    <button type="button">구매하기</button>
+                </div>
+            </div>
+
+                <div class="mid">
+                <div class="item1">
+                    <h2>4개월 간 47%</h2>
+                </div>
+                <div class="item2">
+                    <p>7,400원</p>
+                </div>
+                <div class="item3">
+                    <p>3,900원</p>
+                </div>
+                <div class="buy">
+                    <button type="button">구매하기</button>
+                </div>
+                </div>
+
+                <div class="btm">
+                <div class="item1">
+                    <h2>12개월 내내</h2>
+                </div>
+                <div class="item2">
+                    <p>7,400원</p>
+                </div>
+                <div class="item3">
+                    <p>5,700원</p>
+                </div>
+                <div class="buy">
+                    <button type="button">구매하기</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- best2 -->
+        <div class="best2">
+            <div class="box3">
+                <h2>알뜰 음악감상</h2>
+                <p>
+                    들은 만큼 지불하는 <br>
+                    후불형 요금제
+                </p>
+            </div>
+
+            <div class="box4">
+                <div class="top">
+                <div class="item1">
+                    <h2>일반형</h2>
+                </div>
+                <div class="item2">
+                    <span>기본료</span>
+                    <span>100원</span>
+                    <span>+ 1곡 감상 시</span>
+                    <span>15원</span>
+                </div>
+                <div class="buy">
+                    <button type="button">구매하기</button>
+                </div>
+            </div>
+
+                <div class="mid">
+                <div class="item1">
+                    <h2>포인트형</h2>
+                </div>
+                <div class="item2">
+                    <span>기본료</span>
+                    <span>100원</span>
+                    <span>+ 1곡 감상 시</span>
+                    <span>10원 + 5P</span>
+                </div>
+                <div class="buy">
+                    <button type="button">구매하기</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- /best2 -->
+
+        <!-- best3 -->
+
+        <div class="best3">
+            <div class="box5">
+                <h2>MP3 다운로드</h2>
+            </div>
+
+            <div class="box6">
+                <div class="top">
+                <div class="item1">
+                    <h2>MP3 5곡 (30일)</h2>
+                </div>
+                <div class="item3">
+                    <p>3,000원</p>
+                </div>
+                <div class="buy">
+                    <button type="button">구매하기</button>
+                </div>
+            </div>
+
+                <div class="mid">
+                <div class="item1">
+                    <h2>MP3 10곡 (30일)</h2>
+                </div>
+                <div class="item3">
+                    <p>5,000원</p>
+                </div>
+                <div class="buy">
+                    <button type="button">구매하기</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /best3 -->
+    </section>
+
+    <footer>
+        <div class="text">
+            <figure>
+                <picture>
+                    <source srcset="./img/main/logo_footer.png" media="(min-width:1200px)">
+                    <source srcset="./img/main_t/logo_footer_t.png" media="(min-width:767px)">
+                    <source srcset="./img/main_m/logo_footer_m.png" media="(min-width:1px)">
+                    <img src="./" alt="#">
+                </picture>
+            </figure>
+            <p>
+                케이티 지니뮤직 <br>
+                서울시 강남구 역삼동 809-10 한석타워 4-9층
+            </p>
+            <p>
+                대표이사: 서인욱 <br>
+                사업자 등록 번호: 314-81-03453 <br>
+                통신판매업 신고번호: 2013-서울강남-01302 <br>
+                온라인음악서비스제공업 신고번호: 제 24014-2007-1호 
+            </p>
+            <div class="icon">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    var swiper = new Swiper(".albumSwiper", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: false,
+      },
+    });
+
+    var swiper = new Swiper(".albumSwiper", {
+        slidesPerView: 1,  //초기값 설정 모바일값이 먼저!!
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: false,
+        },
+        breakpoints: {
+        
+          768: {
+            slidesPerView: 4,  //브라우저가 768보다 클 때
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,  //브라우저가 1024보다 클 때
+            spaceBetween: 50,
+          },
+        },
+      });
+
+    var swiper = new Swiper(".artistSwiper", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    var swiper = new Swiper(".artistSwiper", {
+        slidesPerView: 3,  //초기값 설정 모바일값이 먼저!!
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+        
+          768: {
+            slidesPerView: 4,  //브라우저가 768보다 클 때
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,  //브라우저가 1024보다 클 때
+            spaceBetween: 50,
+          },
+        },
+      });
+</script>
+
+</html>

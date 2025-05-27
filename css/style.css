@@ -1,0 +1,758 @@
+.t_hidden{
+    display: none;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+}
+
+header > .menu{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+header > .menu > ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 100px;
+    gap: 100px;
+    z-index: 2;
+    background-color: transparent;
+}
+
+header > .menu > ul > .bar{
+    display: none;
+}
+
+header > .menu > .search > input{
+    width: 200px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.dropdown{
+    position : relative;
+    display : inline-block;
+}
+  
+.dropbtn_icon{
+    font-family : 'Material Icons';
+}
+
+.dropbtn{
+    color : #fff;
+    font-size : 16px;
+}
+  
+.dropdown-content{
+    display : none;
+    position : absolute;
+    z-index : 1; /*다른 요소들보다 앞에 배치*/
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.dropdown-content > li{
+    padding: 5px 0;
+}
+  
+.dropdown-content a:hover{
+    color : #0096dd
+}
+  
+.dropbtn:hover .dropdown-content {
+    display: block;
+}
+
+.m_menu{
+    display: none;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+main > figure > picture:first-child{
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+main > h1{
+    position: absolute;
+    text-align: center;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    line-height: 150%;
+    font-size: 36px;
+}
+
+.tag_music{
+    margin-left: 15%;
+    overflow: hidden;
+    margin-top: 400px;
+}
+
+.tag_music > .main_color{
+    color: #0096dd;
+}
+
+.tag_music > span{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.tag_music > .tag_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 20px;
+    margin: 20px 0;
+}
+
+.tag_music > .tag_btn > .tag{
+    width: 40%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag_music > .tag_btn > .tag > button:first-child{
+    background-color: #0096dd;
+    color: #fff;
+}
+
+.tag_music > .tag_btn > .tag > button{
+    width: 90px;
+    border: none;
+    border-radius: 29px;
+}
+
+.tag_music > .tag_btn > .more > button{
+    width: 70px;
+    border: none;
+    color: #808080;
+    background-color: transparent;
+}
+
+.tag_music > .albumSwiper{
+    text-align: center;
+}
+
+.tag_music > .albumSwiper .swiper-slide p{
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.tag_music > .albumSwiper .swiper-slide p:last-child{
+    margin-top: 8px;
+    color: #808080;
+}
+
+.tag_music > .tag2{
+    display: none;
+}
+
+.tag_music > .tag3{
+    display: none;
+}
+
+.tag_music > .tag4{
+    display: none;
+}
+
+.tag_music > .tag5{
+    display: none;
+}
+
+.tag_music > .section1_m > .tag_btn_m{
+    display: none;
+}
+
+.section1_m > .img_box{
+    display: none;
+}
+
+.up_music{
+    margin-left: 15%;
+    margin-top: 240px;
+}
+
+.up_music > .text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.up_music > .text > h1{
+    font-size: 32px;
+}
+
+.up_music > .text > button{
+    width: 70px;
+    border: none;
+    color: #808080;
+    background-color: transparent;
+}
+
+.up_music > .albumSwiper{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.up_music > .albumSwiper .swiper-slide p{
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.up_music > .albumSwiper .swiper-slide p:last-child{
+    margin-top: 8px;
+    color: #808080;
+}
+
+.artist{
+    margin-left: 15%;
+    margin-top: 240px;
+}
+
+.artist > h1{
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.artist > .artistSwiper .swiper-slide p{
+    text-align: center;
+    margin-right: 40px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.artist > .artistSwiper .swiper-slide p:last-child{
+    margin-top: 8px;
+    color: #808080;
+}
+
+.mag{
+    margin-left: 2.5%;
+    margin-top: 240px;
+}
+
+.mag > .container > .row .title{
+    height: 502px;
+    border: 1px solid #fff;
+    border-radius: 32px;
+}
+
+.mag > .container > .row .title h1{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 36px;
+}
+
+.mag > .container > .row .title p{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.mag > .container > .row .title > .more{
+    position: absolute;
+    bottom: 90px;
+    right: 40px;
+    color: #808080;
+    cursor: pointer;
+}
+
+.mag > .container > .row .box{
+    margin-top: 90px;
+}
+
+.mag > .container > .row .box p{
+    margin-top: 16px;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.mag > .container > .m_h1,
+.mag > .container > .m_p,
+.mag > .container > .row > .col-6{
+    display: none;
+}
+
+.genie{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 400px;
+}
+
+.genie > .text{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.genie > .text > span{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.genie > .text > .main_color{
+    color: #0096dd;
+}
+
+.genie > .best{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.genie > .best > .box{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #0096dd;
+}
+
+.genie > .best > .box > h2{
+    font-size: 20px;
+    color: #0096dd;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.genie > .best > .box > p{
+    font-size: 16px;
+}
+
+.genie > .best > .box2{
+    width: 80%;
+    height: 300px;
+}
+
+.genie > .best > .box2 > .top{
+    width: 92%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #808080;
+}
+
+.genie > .best > .box2 > .top > .item1{
+    position: absolute;
+    left: 30%;
+}
+
+.genie > .best > .box2 > .top > .item1 > h2{
+    font-size: 20px;
+}
+
+.genie > .best > .box2 > .top > .item2{
+    position: absolute;
+    left: 65%;
+}
+
+.genie > .best > .box2 > .top > .item2 > p{
+    font-size: 20px;
+    color: #808080;
+}
+
+.genie > .best > .box2 > .top > .item3{
+    position: absolute;
+    left: 75%;
+}
+
+.genie > .best > .box2 > .top > .item3 > p{
+    font-size: 20px;
+}
+
+.genie > .best > .box2 > .top > .buy{
+    position: absolute;
+    left: 80%;
+}
+
+.genie > .best > .box2 > .mid{
+    width: 92%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #808080;
+}
+
+.genie > .best > .box2 > .mid > .item1{
+    position: absolute;
+    left: 30%;
+}
+
+.genie > .best > .box2 > .mid > .item1 > h2{
+    font-size: 20px;
+}
+
+.genie > .best > .box2 > .mid > .item2{
+    position: absolute;
+    left: 65%;
+}
+
+.genie > .best > .box2 > .mid > .item2 > p{
+    font-size: 20px;
+    color: #808080;
+}
+
+.genie > .best > .box2 > .mid > .item3{
+    position: absolute;
+    left: 75%;
+}
+
+.genie > .best > .box2 > .mid > .item3 > p{
+    font-size: 20px;
+}
+
+.genie > .best > .box2 > .mid > .buy{
+    position: absolute;
+    left: 80%;
+}
+
+.genie > .best > .box2 > .btm{
+    width: 92%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #0096dd;
+}
+
+.genie > .best > .box2 > .btm > .item1{
+    position: absolute;
+    left: 30%;
+}
+
+.genie > .best > .box2 > .btm > .item1 > h2{
+    font-size: 20px;
+}
+
+.genie > .best > .box2 > .btm > .item2{
+    position: absolute;
+    left: 65%;
+}
+
+.genie > .best > .box2 > .btm > .item2 > p{
+    font-size: 20px;
+    color: #808080;
+}
+
+.genie > .best > .box2 > .btm > .item3{
+    position: absolute;
+    left: 75%;
+}
+
+.genie > .best > .box2 > .btm > .item3 > p{
+    font-size: 20px;
+}
+
+.genie > .best > .box2 > .btm > .buy{
+    position: absolute;
+    left: 80%;
+}
+
+.genie > .best > .box2 > .top > .buy > button,
+.genie > .best > .box2 > .mid > .buy > button,
+.genie > .best > .box2 > .btm > .buy > button{
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 32px;
+    background-color: #0096dd;
+    color: #fff;
+}
+
+
+/* best2 */
+
+.genie > .best2{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.genie > .best2 > .box3{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #0096dd;
+    text-align: center;
+}
+
+.genie > .best2 > .box3 > h2{
+    font-size: 20px;
+    color: #0096dd;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.genie > .best2 > .box3 > p{
+    font-size: 16px;
+}
+
+.genie > .best2 > .box4{
+    width: 80%;
+    height: 200px;
+}
+
+.genie > .best2 > .box4 > .top{
+    width: 92%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #808080;
+}
+
+.genie > .best2 > .box4 > .top > .item1{
+    position: absolute;
+    left: 30%;
+}
+
+.genie > .best2 > .box4 > .top > .item1 > h2{
+    font-size: 20px;
+}
+
+.genie > .best2 > .box4 > .top > .item2{
+    position: absolute;
+    left: 64%;
+    text-align: right;
+}
+
+.genie > .best2 > .box4 > .top > .item2 > span{
+    font-size: 20px;
+}
+
+.genie > .best2 > .box4 > .top > .item2 > span:first-child{
+    font-size: 20px;
+    color: #808080;
+}
+
+.genie > .best2 > .box4 > .top > .item2 > span:nth-child(3){
+    font-size: 20px;
+    color: #808080;
+}
+
+.genie > .best2 > .box4 > .top > .buy{
+    position: absolute;
+    left: 80%;
+}
+
+.genie > .best2 > .box4 > .mid{
+    width: 92%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #0096dd;
+}
+
+.genie > .best2 > .box4 > .mid > .item1{
+    position: absolute;
+    left: 30%;
+}
+
+.genie > .best2 > .box4 > .mid > .item1 > h2{
+    font-size: 20px;
+}
+
+.genie > .best2 > .box4 > .mid > .item2{
+    position: absolute;
+    left: 61.5%;
+}
+
+.genie > .best2 > .box4 > .mid > .item2 > span{
+    font-size: 20px;
+}
+
+.genie > .best2 > .box4 > .mid > .item2 > span:first-child{
+    font-size: 20px;
+    color: #808080;
+}
+
+.genie > .best2 > .box4 > .mid > .item2 > span:nth-child(3){
+    font-size: 20px;
+    color: #808080;
+}
+
+.genie > .best2 > .box4 > .mid > .buy{
+    position: absolute;
+    left: 80%;
+}
+
+.genie > .best2 > .box4 > .top > .buy > button,
+.genie > .best2 > .box4 > .mid > .buy > button{
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 32px;
+    background-color: #0096dd;
+    color: #fff;
+}
+
+/* /best2 */
+
+/* /best3 */
+
+.genie > .best3{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.genie > .best3 > .box5{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #0096dd;
+    text-align: center;
+}
+
+.genie > .best3 > .box5 > h2{
+    font-size: 20px;
+    color: #0096dd;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.genie > .best3 > .box6{
+    width: 80%;
+    height: 200px;
+}
+
+.genie > .best3 > .box6 > .top{
+    width: 92%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #808080;
+}
+
+.genie > .best3 > .box6 > .top > .item1{
+    position: absolute;
+    left: 30%;
+}
+
+.genie > .best3 > .box6 > .top > .item1 > h2{
+    font-size: 20px;
+}
+
+.genie > .best3 > .box6 > .top > .item3{
+    position: absolute;
+    left: 75%;
+}
+
+.genie > .best3 > .box6 > .top > .item3 > p{
+    font-size: 20px;
+}
+
+.genie > .best3 > .box6 > .top > .buy{
+    position: absolute;
+    left: 80%;
+}
+
+.genie > .best3 > .box6 > .mid{
+    width: 92%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #0096dd;
+}
+
+.genie > .best3 > .box6 > .mid > .item1{
+    position: absolute;
+    left: 30%;
+}
+
+.genie > .best3 > .box6 > .mid > .item1 > h2{
+    font-size: 20px;
+}
+
+.genie > .best3 > .box6 > .mid > .item3{
+    position: absolute;
+    left: 75%;
+}
+
+.genie > .best3 > .box6 > .mid > .item3 > p{
+    font-size: 20px;
+}
+
+.genie > .best3 > .box6 > .mid > .buy{
+    position: absolute;
+    left: 80%;
+}
+
+.genie > .best3 > .box6 > .top > .buy > button,
+.genie > .best3 > .box6 > .mid > .buy > button{
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 32px;
+    background-color: #0096dd;
+    color: #fff;
+}
+
+/* /best3 */
+
+footer{
+    width: 100%;
+    height: 480px;
+    margin-top: 390px;
+    border-top: 1px solid #808080;
+}
+
+footer > .text{
+    width: 80%;
+    height: 480px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    line-height: 200%;
+    font-size: 16px;
+    color: #808080;
+}
+
+footer > .text > figure{
+    cursor: pointer;
+}
+
+footer > .text > .icon{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
